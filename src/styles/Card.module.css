@@ -1,0 +1,115 @@
+.main_container{
+    /* background-color: red; */
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    
+
+}
+.title{
+    /* background: gold; */
+    margin-top: 30px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.dish_container{
+    /* background-color: green; */
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    align-items: flex-end;
+    
+}
+
+
+.dish_container:last-child{
+    /* background-color: red; */
+    margin-bottom: 30px;
+}
+
+    .dish_container::after{
+        content: "";
+        background: rgba(173, 245, 254, 0.678);
+        position: absolute;
+        z-index: 1;
+        width: 80%;
+        height: 70%;
+        right: 0;
+        bottom: 0;
+        border-bottom-left-radius: 15px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .dish_container:hover::after{
+        background: rgb(125, 232, 187);
+    }
+
+
+    .dish_img{
+        width:  120px;
+        height: 120px;
+        border-radius: 50%;
+        z-index: 99;
+    }
+
+    .info_container{
+        /* background-color: yellow; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 99;
+    }
+
+
+
+        .grupo_h{
+            /* background: purple; */
+            height: 60%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+            .grupo_h>h3{
+                font-weight: 300;
+                width: 100%;
+                font-size: 1.0rem;
+            }
+            .grupo_h>h2{
+                font-weight: 800;
+                width: 100%;
+                font-size: 1.1rem;
+            }
+
+    .dish_btn{
+        border: none;
+        background-color: blueviolet;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 15px;
+        height: auto;
+        font-size: 0.6rem;
+        z-index: 99;        
+    
+    }
+
+    .dish_btn:hover{
+        background-color: rgb(160, 83, 233);
+    }
